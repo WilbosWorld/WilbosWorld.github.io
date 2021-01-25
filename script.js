@@ -433,11 +433,11 @@ function getBTTVEmotes(channel) {
   let endpoint = 'emotes';
   let global = true;
   if (channel) {
-    endpoint = 'channels/' + 'Wilbos_World';
+    endpoint = 'channels/' + channel;
     global = false;
   }
   return request({
-    base: 'https://api.betterttv.net/2/',
+    base: 'https://api.betterttv.net/3/',
     endpoint }).
 
   then(({ emotes, status, urlTemplate }) => {
