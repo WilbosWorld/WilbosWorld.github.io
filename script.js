@@ -433,7 +433,7 @@ function getBTTVEmotes(channel) {
   let endpoint = 'emotes';
   let global = true;
   if (channel) {
-    endpoint = 'channels/' + channel;
+    endpoint = 'channels/' + 'Wilbos_World';
     global = false;
   }
   return request({
